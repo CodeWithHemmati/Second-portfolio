@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins-bold";
+    src: url(fonts/Poppins-Bold.ttf);
+}
+*::before ,*::after , *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20%;
+    position : fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+}
+.header .logo{
+    font-family: "Poppins-bold";
+    font-size: 60px;
+    margin: 0;
+    color: #cc005f;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.header ul li {
+    list-style: none;
+}
+.header ul li a {
+    transition: all 0.3s;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+
+}
+.header ul li a:hover , 
+.header ul li a.active{
+    color: #cc005f;
+    font-weight: 600;
+}
+
+.home{
+    height: 100vh;
+    background-image: url(img/bg-img.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-top h3{
+    color: #cc005f;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.5;
+}
+.home-top h1{
+    color: #fff;
+    font-size: 66px;
+    font-family: "Poppins-bold" , sans-serif;
+    line-height: 1.1;
+}
+.home-top p {
+    color: #fff;
+    text-align:center;
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-family: monospace;
+    margin-top: 10px;
+}
+.home-top button{
+    transition: all 0.3s;
+
+    color: #fff;
+    padding: 18px 60px;
+    border: 2px solid gray;
+    display: block;
+    margin: 50px auto;
+    background-color: transparent;
+    font-size: 17px;
+    word-spacing: 5px;
+    
+}
+
+.home-top button:hover{
+    transition: all 0.3s;
+    border: 2px solid #cc005f;
+}
+.home-bottom{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.home-bottom svg {
+    fill: #fff;
+    transition: 0.3s;
+}
+.home-bottom svg:hover{
+    fill: #cc005f;
+}
+
